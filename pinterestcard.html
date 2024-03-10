@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="./style.css">
+    <title>Pinterest's card</title></head>
+<style>
+    body {
+        background: gray;
+}
+.card {
+    margin-top: 160px;
+    margin-left: 600px;
+    background: white;
+    width: 260px;
+    height: 350px;
+    border-radius: 9px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+.card:hover .img {
+    filter: brightness(0.5);
+}
+.card img {
+    width: 100%;
+    top: auto;
+    height: auto;
+}
+.card:hover #save-btn {
+    opacity: 1;
+    top: 20px;
+}
+ #save-btn {
+    position: absolute;
+    top: -55px;
+    right: 10px;
+    background:red;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 15px;
+    opacity: 0;
+    transition: all 300ms linear;
+}
+.card:hover #nonsobene {
+    opacity: 1;
+    top: 320px;
+    left: 150px; 
+} 
+#nonsobene {
+    position: absolute;
+    top: 350px;
+    left: 10px;
+    background: transparent;
+    color: black;
+    border-radius: 12px;
+    padding: 8px 15px;
+    opacity: 0;
+    transition: all 300ms linear;
+    overflow: hidden;
+}
+.card:hover #share {
+    opacity: 1;
+    top: 320px; 
+}
+#share {
+    position:absolute;
+    top: 320px;
+    left: 30 px;
+    background: transparent;
+    color: black;
+    border-radius: 12px;
+    padding: 8px 15px;
+    opacity: 0;
+    transition: all 300ms linear;
+    overflow: hidden;
+}
+</style>
+<body>
+<div class="card">
+   <button id="save-btn">Save</button>
+   <img src="./img/hokkaido.jpg">
+   <button id="nonsobene">Nonso</button>
+   <button id="share">-></button>
+   <button id="dots">dots</button>
+</div>
+</body>
+</html>
